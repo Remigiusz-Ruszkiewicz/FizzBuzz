@@ -23,10 +23,10 @@ namespace FizzBuzz
             {
                 Console.WriteLine("FizzBuzz");
             }
-            //if (number<0)
-            //{
-            //    throw ArgumentException;
-            //}
+            if (number < 0)
+            {
+                throw new ArgumentException();
+            }
             if (number % 3 != 0 || number % 5 != 0)
             {
                 Console.WriteLine(number);
